@@ -243,7 +243,7 @@ export default function App() {
                 </h1>
 
                 <p className="mt-5 text-base sm:text-xl text-slate-600 leading-relaxed max-w-2xl">
-                  Meet <strong>Orcat</strong>—a chubby tuxedo cat who jumped into the blue ocean of Base. Launching fairly on a bonding curve with locked liquidity, zero team tokens, and simple rules everyone can understand.
+                  Meet <strong>Orcat</strong>—a chubby tuxedo cat who jumped into the blue ocean of Base. Launching fairly on a bonding curve with locked liquidity, almost zero team tokens, and simple rules everyone can understand.
                 </p>
 
                 {/* Primary CTA + CA TBA Copy Action */}
