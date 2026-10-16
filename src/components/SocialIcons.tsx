@@ -5,19 +5,28 @@
 
 import React from 'react';
 
-export function TelegramIcon({ className = 'w-4 h-4' }: { className?: string }) {
+export function CommunityChatIcon({ className = 'w-4 h-4' }: { className?: string }) {
   return (
     <svg
       className={className}
       viewBox="0 0 24 24"
-      fill="currentColor"
-      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       aria-hidden="true"
     >
-      <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.96 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+      <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+      <path d="M8 12h.01" />
+      <path d="M12 12h.01" />
+      <path d="M16 12h.01" />
     </svg>
   );
 }
+
+// Backwards compatibility alias so any other component still importing TelegramIcon works seamlessly
+export const TelegramIcon = CommunityChatIcon;
 
 export function XIcon({ className = 'w-4 h-4' }: { className?: string }) {
   return (
@@ -54,10 +63,10 @@ export function SocialLinks({
             href={telegramUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-[#229ED9]/10 hover:bg-[#229ED9] text-[#229ED9] hover:text-white border border-[#229ED9]/30 hover:border-[#229ED9] text-xs sm:text-sm font-bold transition-all shadow-xs group"
+            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-[#0055FF]/10 hover:bg-[#0055FF] text-[#0055FF] hover:text-white border border-[#0055FF]/30 hover:border-[#0055FF] text-xs sm:text-sm font-bold transition-all shadow-xs group"
           >
-            <TelegramIcon className="w-4 h-4 group-hover:scale-110 transition-transform" />
-            <span>Telegram</span>
+            <CommunityChatIcon className="w-4 h-4 group-hover:scale-110 transition-transform" />
+            <span>Community</span>
           </a>
         )}
         {xUrl && (
@@ -83,11 +92,11 @@ export function SocialLinks({
             href={telegramUrl}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Join Orcat Telegram"
+            aria-label="Orcat Community Chat"
             className="hover:text-white transition-colors inline-flex items-center gap-1.5"
           >
-            <TelegramIcon className="w-3.5 h-3.5 text-[#229ED9]" />
-            <span>Telegram</span>
+            <CommunityChatIcon className="w-3.5 h-3.5 text-blue-400" />
+            <span>Community</span>
           </a>
         )}
         {xUrl && (
@@ -114,10 +123,10 @@ export function SocialLinks({
           href={telegramUrl}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Orcat Telegram Community"
-          className="w-8 h-8 rounded-full flex items-center justify-center text-slate-600 hover:text-[#229ED9] hover:bg-blue-50/80 transition-colors cursor-pointer"
+          aria-label="Orcat Community Chat"
+          className="w-8 h-8 rounded-full flex items-center justify-center text-slate-600 hover:text-[#0055FF] hover:bg-blue-50/80 transition-colors cursor-pointer"
         >
-          <TelegramIcon className="w-4 h-4" />
+          <CommunityChatIcon className="w-4 h-4" />
         </a>
       )}
       {xUrl && (
