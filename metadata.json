@@ -1,0 +1,6 @@
+{
+  "name": "Orcat — Half Cat, Half Whale on Base",
+  "description": "Interactive scroll-story landing page for Orcat, a fair-launch meme token on Base blockchain with 1B supply, bonding curve launch, and locked liquidity.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
